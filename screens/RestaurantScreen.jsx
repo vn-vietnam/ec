@@ -53,7 +53,6 @@ function RestaurantScreen() {
 		<View className="">
 			<BasketIcon />
 			<StatusBar style="light" />
-
 			<ScrollView>
 				<View className="relative">
 					<Image

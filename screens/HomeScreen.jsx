@@ -31,6 +31,10 @@ function HomeScreen() {
 						placeholder="Restaurant"
 						className="ml-2 flex-1"
 						keyboardType="default"
+						onPressIn={() => {
+							navigation.navigate("Search");
+							// focusTextInput: true;
+						}}
 					/>
 					<View className="flex-row items-center space-x-1 border-0 border-l-2 pl-2 border-l-gray-300">
 						<Icon.MapPin height="20" width="20" stroke="gray" />
@@ -62,16 +66,6 @@ function HomeScreen() {
 							/>
 						);
 					})}
-					{/* {[featured, featured, featured].map((item, index) => {
-						return (
-							<Featured
-								key={index}
-								title={item.title}
-								description={item.description}
-								restaurants={item.restaurants}
-							/>
-						);
-					})} */}
 				</View>
 			</ScrollView>
 		</SafeAreaView>
